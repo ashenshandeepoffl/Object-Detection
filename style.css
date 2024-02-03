@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#camera-container {
+    position: relative;
+    margin-bottom: 20px; /* Added margin to separate camera view and table */
+}
+
+video {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Make video fill its container */
+    max-width: 640px; /* Set maximum width */
+}
+
+#output {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 640px; /* Set maximum width */
+}
+
+#object-table {
+    width: 100%;
+    text-align: center;
+}
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
